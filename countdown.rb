@@ -10,10 +10,22 @@ def countdown(number)
   "HAPPY NEW YEAR!"
 end
 
-def countdown_with_sleep(number)
-  number = 10.seconds
-  sleep 1.seconds
-  while number < 12
-  break if number == 0
-  end
+class Integer
+   def seconds
+      return self
+   end
+   def minutes
+      return self * 60
+   end
+   def hours
+      return self * 3600
+   end
+   def days
+      return self * 86400
+   end
+end
+
+def countdown_with_sleep(5)
+  time = Time.now
+  sleep 1.seconds until Time.now > time + 10.seconds
 end
