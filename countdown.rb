@@ -25,7 +25,7 @@ class Integer
    end
 end
 
-def countdown_with_sleep(5)
+def countdown_with_sleep(time)
   time = Time.now
   sleep 1.seconds until Time.now > time + 10.seconds
 end
