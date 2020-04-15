@@ -26,8 +26,7 @@ class Integer
 end
 
 def countdown_with_sleep(number)
-  time = Time.now
-  sleep 1.seconds until Time.now >= time + 10.seconds
+  sleep 1.seconds
   number = 10
   while number < 12
     puts "#{number} SECOND(S)!"
