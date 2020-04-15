@@ -26,11 +26,11 @@ class Integer
 end
 
 def countdown_with_sleep(number)
-  sleep 1.seconds
   number = 10
   while number < 12
     puts "#{number} SECOND(S)!"
     number -= 1
+    sleep 1.seconds
     break if number == 0
   end
   "HAPPY NEW YEAR!"
