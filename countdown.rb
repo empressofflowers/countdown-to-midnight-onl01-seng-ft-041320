@@ -10,7 +10,7 @@ def countdown(number)
   "HAPPY NEW YEAR!"
 end
 
-def countdown_with_sleep(10)
+def countdown_with_sleep(number)
   time = Time.now
   sleep 1.seconds until Time.now > time + 10.seconds
 end
